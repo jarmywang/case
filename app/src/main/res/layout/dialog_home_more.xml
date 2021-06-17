@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="88dp"
+    android:layout_height="83dp"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/home_more_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_adjust"
+        android:text="调整排序"
+        android:textColor="@color/white"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_width="88dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_hide"
+        android:text="隐藏卡片"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_width="88dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

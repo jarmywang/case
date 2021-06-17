@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion = '29.0.3'
+    defaultConfig {
+        applicationId "com.example.demo"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        noCompress "pdf"  //表示不让aapt压缩的文件后缀
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+
+//    implementation project(path: ':flutter')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    api 'com.tencent.tbs.tbssdk:sdk:43939'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.github.dianmi-fe:android-analytics-plugin:0.0.2'
+
+//    api project(path: ':baseAndroid')
+//    api project(path: '../basiscomponent')
+
+//    api project(path: ':baseAndroid:ehrArchitecture')
+//    api project(path: ':baseAndroid:ehrMvvm')
+//    api project(path: ':baseAndroid:ehrMvp')
+//    api project(path: ':baseAndroid:ehrAnalytics')
+
+//    implementation project(path: ':CommonAnalytics')
+//    implementation(name: 'CommonAnalytics', ext: 'aar')
+//    implementation(name: 'CommonArchitecture', ext: 'aar')
+//    implementation(name: 'CommonMvvm', ext: 'aar')
+//    implementation(name: 'CommonMvp', ext: 'aar')
+//    implementation(name: 'CommonNetwork', ext: 'aar')
+//    implementation(name: 'CommonRepository', ext: 'aar')
+
+    implementation 'com.github.dianmi-fe.androidbase:reoisitory:0.0.1'
+    implementation 'com.github.dianmi-fe.androidbase:network:0.0.1'
+    implementation 'com.github.dianmi-fe.androidbase:analytics:0.0.2'
+    implementation 'com.github.dianmi-fe.androidbase:architecture:0.0.2'
+    implementation 'com.github.dianmi-fe.androidbase:mvp:0.0.2'
+    implementation 'com.github.dianmi-fe.androidbase:mvvm:0.0.2'
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <!--<color name="colorAccent">#D81B60</color>-->
+
+    <color name="colorPrimary">#005c37</color>
+    <color name="colorPrimaryDark">#005c37</color>
+    <color name="colorAccent">#005c37</color>
+    <color name="toolbar_start_color">#005c37</color>
+    <color name="toolbar_end_color">#008f60</color>
+
+    <color name="secondary_color">#0bb27a</color><!-- 2.0 主色，色号1-->
+    <color name="orange">#ff9900</color><!-- 2.0 辅色 色号2-->
+    <color name="red">#ed3f14</color><!-- 2.0 色号3-->
+    <color name="orange_weak">#fef4df</color><!-- 2.0-->
+    <color name="split_line">#dcdcdc</color>
+
+    <color name="main_color_press">#008f60</color>
+    <color name="main_color_light">#85d8bc</color>
+    <color name="detail_head_color">#eafffa</color>
+    <color name="item_head_color">#f3f7f9</color>
+
+    <color name="text_main">#323232</color>
+    <color name="text_secondary">#787878</color>
+    <color name="text_hint">#a0a0a0</color>
+    <color name="text_title_4">#1c2438</color><!-- 2.0-->
+    <color name="text_main_5">#495060</color><!-- 2.0-->
+    <color name="text_info_6">#80848f</color><!-- 2.0-->
+    <color name="text_tips_7">#bbbec4</color><!-- 2.0-->
+    <color name="side_8">#e1e6eb</color><!-- 2.0-->
+    <color name="line">#f0f0f0</color><!-- 2.0 分割线 色号9-->
+    <color name="ehr_bg">#f5f5f5</color><!-- 2.0 背景色 色号10-->
+
+    <color name="white">#ffffff</color>
+    <color name="md_red">#F44336</color>
+
+</resources>

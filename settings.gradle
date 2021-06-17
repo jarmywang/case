@@ -1,0 +1,16 @@
+include ':app'
+//setBinding(new Binding([gradle: this]))
+//evaluate(new File(
+//  settingsDir,
+//  '../flutter_module/.android/include_flutter.groovy'
+//))
+//
+//include ':flutter_module'
+//project(':flutter_module').projectDir = new File('../flutter_module')
+
+//include ':baseAndroid'
+//project(':baseAndroid').projectDir = new File('../basiscomponent')
+//include ':baseAndroid:ehrArchitecture'
+//include ':baseAndroid:ehrMvvm'
+//include ':baseAndroid:ehrMvp'
+//include ':baseAndroid:ehrAnalytics'
